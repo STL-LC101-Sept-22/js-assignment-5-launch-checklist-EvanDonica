@@ -46,7 +46,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
         if (fuelLevel < 10000 && cargoLevel <= 10000) {
             fuelStatus.innerHTML = "Fuel levels are too low for launch";
-            cargoStatus.innerHTML = "Cargo mass is at an acceptable weight"
+            cargoStatus.innerHTML = "Cargo mass low enough for launch"
             launchStatus.innerHTML = "Shuttle Not Ready for Launch";
             launchStatus.style.color = 'rgb(199, 37, 78)';
         } else if (fuelLevel >= 10000 && cargoLevel > 10000) {
